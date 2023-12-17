@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1301563644053190
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4101797975152458}
+  - component: {fileID: 114964628211143817}
+  m_Layer: 0
+  m_Name: ThunderLightning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4101797975152458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301563644053190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4699922800210812}
+  - {fileID: 4460647510925716}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114964628211143817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301563644053190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64f4c618a7729d1e12197deff1191ba5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Camera: {fileID: 0}
+  CameraMode: 1
+  UseWorldSpace: 1
+  CompensateForParentTransform: 0
+  QualitySetting: 0
+  MultiThreaded: 0
+  LevelOfDetailDistance: 0
+  UseGameTime: 0
+  SortLayerName:
+  SortOrderInLayer: 0
+  SoftParticlesFactor: 3
+  RenderQueue: -1
+  LightningMaterialMesh: {fileID: 2100000, guid: 4b3b4fb056d5abe4cb2ff12a6b86b8f7, type: 2}
+  LightningMaterialMeshNoGlow: {fileID: 2100000, guid: 52e9024eef396a349901284e4f332ee1, type: 2}
+  LightningTexture: {fileID: 2800000, guid: 48a0c2a0460e0954f9589bbda465b7a6, type: 3}
+  LightningGlowTexture: {fileID: 2800000, guid: a7ae9011d69d99c43a8a353a29761778, type: 3}
+  LightningOriginParticleSystem: {fileID: 0}
+  LightningDestinationParticleSystem: {fileID: 0}
+  LightningTintColor: {r: 0.9883463, g: 1, b: 0.7688679, a: 1}
+  GlowTintColor: {r: 1, g: 0.97948664, b: 0.5990566, a: 1}
+  MainTrunkTintColor: {r: 0.991298, g: 1, b: 0.5707547, a: 1}
+  SourceBlendMode: 5
+  DestinationBlendMode: 1
+  SourceBlendModeGlow: 5
+  DestinationBlendModeGlow: 1
+  JitterMultiplier: 1
+  Turbulence: 1
+  TurbulenceVelocity: {x: 0, y: 0, z: 0}
+  IntensityFlicker: {x: 0, y: 0}
+  IntervalRange:
+    Minimum: 0.01
+    Maximum: 0.04
+  CountRange:
+    Minimum: 1
+    Maximum: 3
+  CountProbabilityModifier: 1
+  DelayRange:
+    Minimum: 0
+    Maximum: 0
+  DurationRange:
+    Minimum: 0.03
+    Maximum: 0.13
+  TrunkWidthRange:
+    Minimum: 0.005
+    Maximum: 0.1
+  LifeTime: 0
+  Generations: 6
+  ChaosFactor: 0.09
+  ChaosFactorForks: 0.089
+  Intensity: 10
+  GlowIntensity: 10
+  GlowWidthMultiplier: 4.9
+  FadePercent: 0.1
+  FadeInMultiplier: 1
+  FadeFullyLitMultiplier: 1
+  FadeOutMultiplier: 1
+  GrowthMultiplier: 0.3
+  EndWidthMultiplier: 1
+  Forkedness: 0.036
+  ForkLengthMultiplier: 0
+  ForkLengthVariance: 2.31
+  ForkEndWidthMultiplier: 0.64
+  LightParameters:
+    RenderMode: 0
+    LightColor: {r: 1, g: 0.98421997, b: 0.7216981, a: 1}
+    LightPercent: 1
+    LightShadowPercent: 0
+    LightIntensity: 8
+    LightMultiplier: 25
+    BounceIntensity: 0
+    ShadowStrength: 1
+    ShadowBias: 0.05
+    ShadowNormalBias: 0.4
+    LightRange: 32
+    CullingMask:
+      serializedVersion: 2
+      m_Bits: 264
+    OrthographicOffset: 0
+    FadeInMultiplier: 1
+    FadeFullyLitMultiplier: 3
+    FadeOutMultiplier: 5
+  MaximumLightsPerBatch: 3
+  ManualMode: 1
+  AutomaticModeSeconds: 0
+  CustomTransformHandler:
+    m_PersistentCalls:
+      m_Calls: []
+  Source: {fileID: 1269069260549241}
+  Destination: {fileID: 1407662753437671}
+  StartVariance: {x: 0, y: 0, z: 0}
+  EndVariance: {x: 0, y: 0, z: 0}
+--- !u!1 &1407662753437671
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4699922800210812}
+  m_Layer: 0
+  m_Name: LightningEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4699922800210812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407662753437671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.04, y: 0.42, z: -9.97}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4101797975152458}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1269069260549241
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4460647510925716}
+  m_Layer: 0
+  m_Name: LightningStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4460647510925716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269069260549241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4101797975152458}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}

@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1397052637832637
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4457949196263779}
+  - component: {fileID: 114814536531430326}
+  - component: {fileID: 65832899895532645}
+  - component: {fileID: 54723119259567014}
+  m_Layer: 13
+  m_Name: BridgeScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4457949196263779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397052637832637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114814536531430326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397052637832637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b371b1f3fe8b4d18db5c51d5fba373, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  bridgeDurability: 1
+  bridgeAudioSource: {fileID: 8076, guid: 6ba38a69554b00a4c941402c4304bba8, type: 2}
+  bridgeCreakSFX:
+  - {fileID: 8300000, guid: ab8b21416611c6f4b8bd4b0d11ec72a2, type: 3}
+  - {fileID: 8300000, guid: 08f5426a0e00c9b408de5db75aa0c7b7, type: 3}
+  - {fileID: 8300000, guid: e5f8dc81c5d89c0449cd9f2f83f1eae9, type: 3}
+  bridgeFallSFX: {fileID: 8300000, guid: c2b0b9508b3b1de418bda634b57b2e09, type: 3}
+  bridgeAnimator: {fileID: 8091, guid: 6ba38a69554b00a4c941402c4304bba8, type: 2}
+  bridgePhysicsPartsContainer: {fileID: 3118, guid: 6ba38a69554b00a4c941402c4304bba8, type: 2}
+  fallenBridgeColliders:
+  - {fileID: 7134, guid: 6ba38a69554b00a4c941402c4304bba8, type: 2}
+  - {fileID: 7121, guid: 6ba38a69554b00a4c941402c4304bba8, type: 2}
+  - {fileID: 7149, guid: 6ba38a69554b00a4c941402c4304bba8, type: 2}
+--- !u!65 &65832899895532645
+BoxCollider:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397052637832637}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  m_Size: {x: 1.3318014, y: 2.4833963, z: 1}
+  m_Center: {x: -0.032369394, y: 0.7416985, z: 0}
+--- !u!54 &54723119259567014
+Rigidbody:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397052637832637}
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1

@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1644322317156620
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4072229282281960}
+  - component: {fileID: 328209813498557108}
+  - component: {fileID: 114866406342979289}
+  m_Layer: 0
+  m_Name: TVScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4072229282281960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644322317156620}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!328 &328209813498557108
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644322317156620}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 31809d5b846a2924c8421007b3d37948, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 9f7393969666af043a74d160edd4a03c, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: '<noninit>'
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 0
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url:
+  m_EnabledAudioTracks: []
+  m_DirectAudioMutes: []
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 0
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!114 &114866406342979289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644322317156620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1d3dca9a4737dbb9423eef1a5fa1a2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  tvOn: 0
+  tvMesh: {fileID: 23863592527332539, guid: eb8b56ce384c9ab4880523ac09557f1c, type: 2}
+  video: {fileID: 328209813498557108}
+  tvClips:
+  - {fileID: 32900000, guid: 31809d5b846a2924c8421007b3d37948, type: 3}
+  - {fileID: 32900000, guid: ea098159b94da3f4b9b73ceaa44b71f6, type: 3}
+  - {fileID: 32900000, guid: 4fe7273b31bc965498a6597a48b7b5ae, type: 3}
+  - {fileID: 32900000, guid: e329c5822bc938a4cabb8c7b705c76d6, type: 3}
+  tvAudioClips:
+  - {fileID: 8300000, guid: d7f502a55fbcbb34fb89d7bed84fa02b, type: 3}
+  - {fileID: 8300000, guid: 6526bd1cd724d7445bf712be3887cd28, type: 3}
+  - {fileID: 8300000, guid: b7630cea5c2b77f4eaa14701a83be9f5, type: 3}
+  - {fileID: 8300000, guid: 5c60b5e0d5c6d7f4995441bc47c6297e, type: 3}
+  tvOnMaterial: {fileID: 2100000, guid: 72fc85fd74d9a1641b5ea5bd66a27549, type: 2}
+  tvOffMaterial: {fileID: 2100000, guid: 9c97cfb24607dbe4abef69a6e1456067, type: 2}
+  switchTVOn: {fileID: 8300000, guid: 26ff1e9f5c19d9a42bf8cc46f766a872, type: 3}
+  switchTVOff: {fileID: 8300000, guid: 7c154a4821b81be47a101ae1f01443fd, type: 3}
+  tvSFX: {fileID: 82247986486047783, guid: eb8b56ce384c9ab4880523ac09557f1c, type: 2}
+  tvLight: {fileID: 108944120300987134, guid: eb8b56ce384c9ab4880523ac09557f1c, type: 2}

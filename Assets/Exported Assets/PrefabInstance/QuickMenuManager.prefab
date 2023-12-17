@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1167248922459871
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4767664714109701}
+  - component: {fileID: 114902482007662012}
+  m_Layer: 0
+  m_Name: QuickMenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4767664714109701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167248922459871}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4098470563964668}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114902482007662012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167248922459871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 063b0b8f37a2327127a61cd74747a9da, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  interactTipText: {fileID: 0}
+  leaveGameClarificationText: {fileID: 5759, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  cursorIcon: {fileID: 0}
+  menuContainer: {fileID: 896, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  mainButtonsPanel: {fileID: 552, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  leaveGameConfirmPanel: {fileID: 280, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  settingsPanel: {fileID: 1842, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  ConfirmKickUserPanel: {fileID: 674, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  ConfirmKickPlayerText: {fileID: 5673, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  KeybindsPanel: {fileID: 1004, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  isMenuOpen: 0
+  currentMicrophoneText: {fileID: 0}
+  voiceChatModule: {fileID: 6425, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  changesNotAppliedText: {fileID: 5858, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  settingsBackButton: {fileID: 5875, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  PleaseConfirmChangesSettingsPanel: {fileID: 1201, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  PleaseConfirmChangesSettingsPanelBackButton: {fileID: 6578, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  inviteFriendsTextAlpha: {fileID: 5557, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  playerListSlots:
+  - slotContainer: {fileID: 1381, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    volumeSliderContainer: {fileID: 987, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    KickUserButton: {fileID: 1519, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    isConnected: 0
+    usernameHeader: {fileID: 5880, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    volumeSlider: {fileID: 6415, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    playerSteamId: 0
+  - slotContainer: {fileID: 1245, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    volumeSliderContainer: {fileID: 1193, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    KickUserButton: {fileID: 1624, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    isConnected: 0
+    usernameHeader: {fileID: 5871, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    volumeSlider: {fileID: 6468, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    playerSteamId: 0
+  - slotContainer: {fileID: 1244, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    volumeSliderContainer: {fileID: 1192, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    KickUserButton: {fileID: 1626, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    isConnected: 0
+    usernameHeader: {fileID: 5869, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    volumeSlider: {fileID: 6470, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    playerSteamId: 0
+  - slotContainer: {fileID: 1243, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    volumeSliderContainer: {fileID: 1191, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    KickUserButton: {fileID: 1625, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    isConnected: 0
+    usernameHeader: {fileID: 5870, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    volumeSlider: {fileID: 6469, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+    playerSteamId: 0
+  playerListPanel: {fileID: 335, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  doorGameObjects:
+  - {fileID: 101, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  - {fileID: 277, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  - {fileID: 140, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  outOfBoundsCollider: {fileID: 3749, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  debugMenuUI: {fileID: 253, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  testAllEnemiesLevel: {fileID: 11400000, guid: 3484ecea7c6145c498d170c2415b77b5, type: 2}
+  debugEnemySpawnPositions:
+  - {fileID: 2057, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  - {fileID: 2177, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  - {fileID: 2281, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  - {fileID: 4098470563964668}
+  debugEnemyDropdown: {fileID: 6325, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  allItemsDropdown: {fileID: 6008, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+--- !u!1 &1453892772419177
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4098470563964668}
+  m_Layer: 0
+  m_Name: SpawnItemDebugPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4098470563964668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453892772419177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.33, y: 0.705, z: -14.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4767664714109701}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}

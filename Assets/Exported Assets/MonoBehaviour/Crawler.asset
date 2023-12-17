@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d3fcb39dd67306e9bb17a603308070, type: 3}
+  m_Name: Crawler
+  m_EditorClassIdentifier:
+  enemyName: Crawler
+  probabilityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.9707031
+      inSlope: 0.08609979
+      outSlope: 0.08609979
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.0816641
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.011700838
+      outSlope: 0.011700838
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1001541
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  numberSpawnedFalloff:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useNumberSpawnedFalloff: 0
+  enemyPrefab: {fileID: 1466546793136129, guid: c7dc438a71a58d84fa195c610be52fe4, type: 2}
+  PowerLevel: 3
+  MaxCount: 4
+  numberSpawned: 0
+  isOutsideEnemy: 0
+  isDaytimeEnemy: 0
+  normalizedTimeInDayToLeave: 1
+  stunTimeMultiplier: 1
+  doorSpeedMultiplier: 0.3
+  stunGameDifficultyMultiplier: 0.5
+  canBeStunned: 1
+  canDie: 1
+  destroyOnDeath: 0
+  canSeeThroughFog: 0
+  timeToPlayAudio: 35
+  loudnessMultiplier: 2
+  overrideVentSFX: {fileID: 0}
+  hitBodySFX: {fileID: 0}
+  hitEnemyVoiceSFX: {fileID: 0}
+  deathSFX: {fileID: 8300000, guid: c4d7d064ec17e964d9999c64ec69b315, type: 3}
+  stunSFX: {fileID: 8300000, guid: f42a7f3cdd041204bb897241b1ac4fe3, type: 3}
+  miscAnimations: []
+  audioClips: []

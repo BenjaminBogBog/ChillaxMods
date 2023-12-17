@@ -1,0 +1,295 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1289426460474282
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4532331702802515}
+  - component: {fileID: 114403500175917270}
+  - component: {fileID: 114911805705386784}
+  m_Layer: 0
+  m_Name: RoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4532331702802515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289426460474282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4914700302330030}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114403500175917270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289426460474282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c772563b62eda8b681c04c691cd6f847, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  playersManager: {fileID: 5953, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  syncedPropsContainer: {fileID: 0}
+  itemPooledObjectsContainer: {fileID: 0}
+  scrapValueMultiplier: 0.4
+  scrapAmountMultiplier: 1
+  mapSizeMultiplier: 1.5
+  currentEnemyPower: 0
+  currentOutsideEnemyPower: 0
+  currentDaytimeEnemyPower: 0
+  timeScript: {fileID: 0}
+  currentHourTime: 0
+  enemySpawnTimes:
+  currentEnemySpawnIndex: 0
+  isSpawningEnemies: 0
+  begunSpawningEnemies: 0
+  ElevatorCharging: 0
+  elevatorCharge: 0
+  ElevatorPowered: 0
+  elevatorUp: 0
+  ElevatorLowering: 0
+  ElevatorRunning: 0
+  ReturnToSurface: 0
+  ElevatorAnimator: {fileID: 0}
+  ElevatorLightAnimator: {fileID: 0}
+  elevatorMotorAudio: {fileID: 0}
+  startMotor: {fileID: 8300000, guid: 79bef6ddce8a44240b123aa619dd308e, type: 3}
+  PanelButtons: {fileID: 0}
+  PanelLights: {fileID: 0}
+  elevatorButtonsAudio: {fileID: 0}
+  PressButtonSFX1: {fileID: 8300000, guid: 1967a704dadda454c92ac58cf904943c, type: 3}
+  PressButtonSFX2: {fileID: 8300000, guid: ddeb5f4b2ba18844abfab580ae098d83, type: 3}
+  PanelScreenText: {fileID: 0}
+  PanelScreen: {fileID: 0}
+  lungPlacePosition: {fileID: 0}
+  elevatorSocketTrigger: {fileID: 0}
+  allEnemyVents: []
+  SpawnedAnomalies: []
+  SpawnedEnemies: []
+  hourTimeBetweenEnemySpawnBatches: 2
+  numberOfEnemiesInScene: 0
+  minEnemiesToSpawn: 0
+  minOutsideEnemiesToSpawn: 0
+  spawnableMapObjects:
+  - prefabToSpawn: {fileID: 1435511583166562, guid: 836b6701385ec81468646b23fb120594, type: 2}
+    spawnFacingAwayFromWall: 0
+    numberToSpawn:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0.35461718
+        outSlope: 0.35461718
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.9235111
+      - serializedVersion: 3
+        time: 0.6990583
+        value: 2.9654965
+        inSlope: 7.064207
+        outSlope: 7.064207
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.2517488
+        outWeight: 0.6898178
+      - serializedVersion: 3
+        time: 1.0002186
+        value: 20.206818
+        inSlope: 224.50304
+        outSlope: 224.50304
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.25616568
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+  - prefabToSpawn: {fileID: 1550653228722155, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+    spawnFacingAwayFromWall: 1
+    numberToSpawn:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: -1.816079E-08
+        value: 2.0206757
+        inSlope: 0.35461718
+        outSlope: 0.35461718
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.9235111
+      - serializedVersion: 3
+        time: 0.6990583
+        value: 2.9654965
+        inSlope: 7.064207
+        outSlope: 7.064207
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.2517488
+        outWeight: 0.6898178
+      - serializedVersion: 3
+        time: 1.0002185
+        value: 6.567215
+        inSlope: 57.252174
+        outSlope: 57.252174
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.16646433
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+  mapPropsContainer: {fileID: 534, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  shipSpawnPathPoints:
+  - {fileID: 2213, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  - {fileID: 2067, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  - {fileID: 2044, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  spawnDenialPoints: []
+  possibleCodesForBigDoors:
+  - f2
+  - u9
+  - v0
+  - i1
+  - c1
+  - c2
+  - c7
+  - h5
+  - d6
+  - u2
+  - r2
+  - l0
+  - k9
+  - r4
+  - m6
+  - b3
+  - p1
+  - y9
+  - x8
+  - z3
+  - j6
+  - t2
+  - o5
+  - m9
+  quicksandPrefab: {fileID: 1428929820464852, guid: d111c206e33232d4caa1de8b31922fe5, type: 2}
+  keyPrefab: {fileID: 1347662701439864, guid: 57b45aa57a4847d408727d019fa6d652, type: 2}
+  outsideAINodes: []
+  insideAINodes: []
+  dungeonFlowTypes:
+  - {fileID: 11400000, guid: 6e9d76ac9b692a7418575f0f485d1099, type: 2}
+  - {fileID: 11400000, guid: 680931e7ca0ed134eaf304cea2e32363, type: 2}
+  - {fileID: 11400000, guid: e415c0530d4f7d74dacec7fee297ae5b, type: 2}
+  dungeonGenerator: {fileID: 0}
+  dungeonCompletedGenerating: 0
+  dungeonFinishedGeneratingForAllPlayers: 0
+  firstTimeDungeonAudios:
+  - {fileID: 8300000, guid: a3a7f5521117de84c8113c48bb3f6f79, type: 3}
+  - {fileID: 8300000, guid: 0be9278eeffb4434cb329ca937effaa8, type: 3}
+  spawnedScrapContainer: {fileID: 0}
+  scrapCollectedInLevel: 0
+  totalScrapValueInLevel: 0
+  valueOfFoundScrapItems: 0
+  scrapCollectedThisRound: []
+  currentLevel: {fileID: 11400000, guid: 3484ecea7c6145c498d170c2415b77b5, type: 2}
+  powerOffPermanently: 0
+  hasInitializedLevelRandomSeed: 0
+  playersFinishedGeneratingFloor:
+  allPoweredLightsAnimators: []
+  allPoweredLights: []
+  spawnedSyncedObjects: []
+  stabilityMeter: 0
+  collisionsMask: 2305
+  cannotSpawnMoreInsideEnemies: 0
+  tempColliderResults:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  tempTransform: {fileID: 4914700302330030}
+  GotNavMeshPositionResult: 0
+--- !u!114 &114911805705386784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289426460474282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2006330137, guid: 138b4eb11884c8b175831866fa6e3bff, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  GlobalObjectIdHash: 2376219409
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!1 &1792233006631416
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4914700302330030}
+  m_Layer: 0
+  m_Name: TempTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4914700302330030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792233006631416}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532331702802515}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}

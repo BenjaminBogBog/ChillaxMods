@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1043075325378306
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4695649693976648}
+  - component: {fileID: 33709649441224148}
+  - component: {fileID: 23842235434066799}
+  - component: {fileID: 65173425331088232}
+  - component: {fileID: 114628879205093894}
+  - component: {fileID: 114213403334564424}
+  m_Layer: 21
+  m_Name: TurretScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4695649693976648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043075325378306}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33709649441224148
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043075325378306}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &23842235434066799
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043075325378306}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: de4409838a0e4aa4ca20307e9855308a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &65173425331088232
+BoxCollider:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043075325378306}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  m_Size: {x: 1, y: 1.2195414, z: 1}
+  m_Center: {x: 0, y: 0.10977033, z: 0}
+--- !u!114 &114628879205093894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043075325378306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb31b43a374a93ca6ba1acfb4a89226f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  mainAudio: {fileID: 82888982037876492, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+  bulletCollisionAudio: {fileID: 82278915084267915, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+  farAudio: {fileID: 82667736186427064, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+  firingSFX: {fileID: 8300000, guid: 8982a07abd37afa4d8d874b556f85042, type: 3}
+  chargingSFX: {fileID: 8300000, guid: bb60091ee0ff36840a68d8e429586748, type: 3}
+  detectPlayerSFX: {fileID: 8300000, guid: bb60091ee0ff36840a68d8e429586748, type: 3}
+  firingFarSFX: {fileID: 8300000, guid: d4be0e8be55927e47aeb4a0aaea96d80, type: 3}
+  bulletsHitWallSFX: {fileID: 8300000, guid: 5a5d493958e82834d8a5cc6eaa8f3e0b, type: 3}
+  turretActivate: {fileID: 8300000, guid: 9281d4bb1873da8469a4d31887227b98, type: 3}
+  turretDeactivate: {fileID: 8300000, guid: 051df570b1dc5164e8969e2dc7e81514, type: 3}
+  bulletParticles: {fileID: 198370152751047198, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+  turretAnimator: {fileID: 95660657807274126, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+  turretActive: 1
+  turretMode: 0
+  turretRod: {fileID: 4986270480179884, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+  targetRotation: 0
+  rotationSpeed: 2.6
+  turnTowardsObjectCompass: {fileID: 4254782425533504, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+  forwardFacingPos: {fileID: 4863255934383843, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+  aimPoint: {fileID: 4575190738835756, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+  centerPoint: {fileID: 4254782425533504, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+  targetPlayerWithRotation: {fileID: 0}
+  targetTransform: {fileID: 0}
+  rotationRange: 75
+  currentRotation: 0
+  rotatingOnInterval: 1
+  tempTransform: {fileID: 4540267538580808, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+  berserkAudio: {fileID: 82160409687382164, guid: e78b7ea6ca34304418c7998d17d95670, type: 2}
+--- !u!114 &114213403334564424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043075325378306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c662b0f92d7236699123213e2fb9f4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  objectCode:
+  codeAccessCooldownTimer: 5
+  terminalCodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114628879205093894}
+        m_TargetAssemblyTypeName: Turret, Assembly-CSharp
+        m_MethodName: ToggleTurretEnabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument:
+          m_BoolArgument: 0
+        m_CallState: 2
+  terminalCodeCooldownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114628879205093894}
+        m_TargetAssemblyTypeName: Turret, Assembly-CSharp
+        m_MethodName: ToggleTurretEnabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument:
+          m_BoolArgument: 1
+        m_CallState: 2
+  setCodeRandomlyFromRoundManager: 1
+  codeMaterials: []
+  rows: 0
+  columns: 0
+  isBigDoor: 0

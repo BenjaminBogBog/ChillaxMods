@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c30496d6ae6d6f907456e10a94e01ec6, type: 3}
+  m_Name: CashRegister
+  m_EditorClassIdentifier:
+  itemId: 0
+  itemName: Cash register
+  spawnPositionTypes:
+  - {fileID: 11400000, guid: adf060a6cd73c1f40bed9688f228026c, type: 2}
+  - {fileID: 11400000, guid: f659ca36c30c06a4b8d58911f4e83cd2, type: 2}
+  twoHanded: 1
+  twoHandedAnimation: 1
+  canBeGrabbedBeforeGameStart: 1
+  weight: 1.8
+  itemIsTrigger: 0
+  holdButtonUse: 0
+  itemSpawnsOnGround: 1
+  isConductiveMetal: 1
+  isScrap: 1
+  creditsWorth: 0
+  lockedInDemo: 0
+  highestSalePercentage: 80
+  maxValue: 400
+  minValue: 200
+  spawnPrefab: {fileID: 1999140471688299, guid: b1021330f6bd30f448eaad632fddd202, type: 2}
+  requiresBattery: 0
+  batteryUsage: 5
+  automaticallySetUsingPower: 1
+  itemIcon: {fileID: 21300000, guid: ae1ae6bad80325c40b801f477aa8fb10, type: 2}
+  grabAnim: HoldLung
+  useAnim:
+  pocketAnim:
+  throwAnim:
+  grabAnimationTime: 0
+  grabSFX: {fileID: 8300000, guid: d019dac40b3994e4bad50c208adcdcf7, type: 3}
+  dropSFX: {fileID: 8300000, guid: 5e79ec8e115fce940b4648e64b992b8a, type: 3}
+  pocketSFX: {fileID: 0}
+  throwSFX: {fileID: 0}
+  syncGrabFunction: 0
+  syncUseFunction: 1
+  syncDiscardFunction: 0
+  syncInteractLRFunction: 0
+  saveItemVariable: 0
+  isDefensiveWeapon: 0
+  toolTips:
+  - 'Use cash register : [RMB]'
+  verticalOffset: 0.3
+  floorYOffset: 0
+  allowDroppingAheadOfPlayer: 1
+  restingRotation: {x: -90, y: 0, z: 40}
+  rotationOffset: {x: -34.4, y: -167.8, z: -245}
+  positionOffset: {x: -0.35, y: 0.1, z: -0.1}
+  meshOffset: 1
+  meshVariants: []
+  materialVariants: []
+  usableInSpecialAnimations: 0
+  canBeInspected: 0

@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d3fcb39dd67306e9bb17a603308070, type: 3}
+  m_Name: RedLocustBees
+  m_EditorClassIdentifier:
+  enemyName: Red Locust Bees
+  probabilityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0.111742325
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.10738342
+      value: 1
+      inSlope: 0.22676487
+      outSlope: -0.7041795
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.95421654
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.13680878
+      value: 0
+      inSlope: -27.26356
+      outSlope: Infinity
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.06912404
+      outWeight: 0.096773066
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: Infinity
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1623237
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  numberSpawnedFalloff:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0.055871747
+      outSlope: 0.055871747
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.24488212
+    - serializedVersion: 3
+      time: 0.1
+      value: 1
+      inSlope: -0
+      outSlope: -2.4416516
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.22041135
+    - serializedVersion: 3
+      time: 0.3875449
+      value: 0.2611519
+      inSlope: -1.5056664
+      outSlope: -1.5056664
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.19114694
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useNumberSpawnedFalloff: 0
+  enemyPrefab: {fileID: 1963618295680590, guid: 95139ae9f6b2ca24d86ea883e84335c7, type: 2}
+  PowerLevel: 1
+  MaxCount: 6
+  numberSpawned: 2
+  isOutsideEnemy: 1
+  isDaytimeEnemy: 1
+  normalizedTimeInDayToLeave: 0.978
+  stunTimeMultiplier: 1
+  doorSpeedMultiplier: 0.3
+  stunGameDifficultyMultiplier: 0.7
+  canBeStunned: 0
+  canDie: 0
+  destroyOnDeath: 0
+  canSeeThroughFog: 0
+  timeToPlayAudio: 15
+  loudnessMultiplier: 1
+  overrideVentSFX: {fileID: 0}
+  hitBodySFX: {fileID: 0}
+  hitEnemyVoiceSFX: {fileID: 0}
+  deathSFX: {fileID: 0}
+  stunSFX: {fileID: 0}
+  miscAnimations: []
+  audioClips:
+  - {fileID: 8300000, guid: 993cad7444aef2e46bb89e729a9c0e5e, type: 3}
+  - {fileID: 8300000, guid: a8a9d7c679201bd44b816a32d4fecad1, type: 3}
+  - {fileID: 8300000, guid: a49813042cda67c4996f8b039a5afff9, type: 3}
+  - {fileID: 8300000, guid: 43696697e6a67a84097723edb0124426, type: 3}
+  - {fileID: 8300000, guid: be38515d68fd6e940bdab01947f14754, type: 3}
+  - {fileID: 8300000, guid: 07258958d6fbc2640b61a725d960dde8, type: 3}

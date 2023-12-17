@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1006309529756920
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4234632676827772}
+  - component: {fileID: 114092385450747300}
+  m_Layer: 0
+  m_Name: CameraMonitorScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4234632676827772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006309529756920}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114092385450747300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006309529756920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b4c44e05b0e806cd35eab4eba641123, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  cam: {fileID: 3155, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  cameraViews:
+  - camera: {fileID: 0}
+    cameraMaterial: {fileID: 0}
+  cameraViewIndex: 0
+  currentCameraDisabled: 1
+  mesh: {fileID: 3376, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  offScreenMat: {fileID: 2100000, guid: 971da4e0f49a95e47841d83b0d3bafc6, type: 2}
+  onScreenMat: {fileID: 2100000, guid: 21b1db3f47b2c2a4c82b6302c3f40cd4, type: 2}
+  materialIndex: 1
+  overrideCameraForOtherUse: 0
+  renderAtLowerFramerate: 0
+  fps: 5
+  targetedPlayer: {fileID: 0}
+  radarTargets: []
+  targetTransformIndex: 0
+  mapCamera: {fileID: 3155, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  mapCameraLight: {fileID: 4038, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  mapCameraAnimator: {fileID: 3966, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  mapCameraStationaryUI: {fileID: 5104, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  shipArrowPointer: {fileID: 4938, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}
+  shipArrowUI: {fileID: 467, guid: 10549b6fcac346a4f9587d97c3f21408, type: 2}

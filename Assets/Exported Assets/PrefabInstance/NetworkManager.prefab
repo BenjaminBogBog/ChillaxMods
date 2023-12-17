@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1879851817685273
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4335874489389777}
+  - component: {fileID: 114793904506864886}
+  - component: {fileID: 114902706834340721}
+  - component: {fileID: 114928664066900305}
+  m_Layer: 0
+  m_Name: NetworkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4335874489389777
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879851817685273}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114793904506864886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879851817685273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1462644325, guid: 138b4eb11884c8b175831866fa6e3bff, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  NetworkConfig:
+    ProtocolVersion: 1
+    NetworkTransport: {fileID: 114928664066900305}
+    PlayerPrefab: {fileID: 0}
+    Prefabs:
+      NetworkPrefabsLists:
+      - {fileID: 11400000, guid: 0368c92d2894cf644b2f14a4c39640c0, type: 2}
+    TickRate: 25
+    ClientConnectionBufferTimeout: 10
+    ConnectionApproval: 1
+    ConnectionData:
+    EnableTimeResync: 0
+    TimeResyncInterval: 30
+    EnsureNetworkVariableLengthSafety: 0
+    EnableSceneManagement: 1
+    ForceSamePrefabs: 1
+    RecycleNetworkIds: 0
+    NetworkIdRecycleDelay: 120
+    RpcHashSize: 0
+    LoadSceneTimeOut: 25
+    SpawnTimeout: 1
+    EnableNetworkLogs: 1
+    OldPrefabList: []
+  RunInBackground: 1
+  LogLevel: 0
+--- !u!114 &114902706834340721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879851817685273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b644d029963e2a1609e95aa9e7c2de27, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  gameVersionNum: 45
+  compatibleFileCutoffVersion: 38
+  AlwaysDisplayNews: 0
+  isDemo: 0
+  SendExceptionsToServer: 0
+  disableSteam: 1
+  connectedPlayers: 0
+  maxAllowedPlayers: 4
+  gameHasStarted: 0
+  localPlayerController: {fileID: 0}
+  disconnectReason: 0
+  username:
+  isDisconnecting: 0
+  firstTimeInMenu: 1
+  isHostingGame: 0
+  waitingForLobbyDataRefresh: 0
+  playersInRefreshedLobby: 0
+  steamLobbyName:
+  currentSaveFileName: LCompanySave1
+  saveFileNum: 0
+  buttonCancelSFX: {fileID: 8300000, guid: 94166474a7689724ca9aca2ed93c62a0, type: 3}
+  buttonSelectSFX: {fileID: 8300000, guid: 598d0518aa9607a4d96c9f8d4b161358, type: 3}
+  buttonPressSFX: {fileID: 8300000, guid: c98a0a46ca3ff364fa8fd8aa565bd325, type: 3}
+  buttonTuneSFX: {fileID: 8300000, guid: 97ce0c51e2e090f458b7ec2b148494a3, type: 3}
+  disallowConnection: 0
+  disconnectionReasonMessage:
+  localClientWaitingForApproval: 0
+  disapprovedClientThisFrame: 0
+--- !u!114 &114928664066900305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879851817685273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -170152451, guid: 138b4eb11884c8b175831866fa6e3bff, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_ProtocolType: 0
+  m_MaxPacketQueueSize: 128
+  m_MaxPayloadSize: 6144
+  m_HeartbeatTimeoutMS: 500
+  m_ConnectTimeoutMS: 1000
+  m_MaxConnectAttempts: 60
+  m_DisconnectTimeoutMS: 30000
+  ConnectionData:
+    Address: 127.0.0.1
+    Port: 7777
+    ServerListenAddress: 127.0.0.1
+  DebugSimulator:
+    PacketDelayMS: 0
+    PacketJitterMS: 0
+    PacketDropRate: 0

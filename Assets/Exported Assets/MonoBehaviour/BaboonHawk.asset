@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d3fcb39dd67306e9bb17a603308070, type: 3}
+  m_Name: BaboonHawk
+  m_EditorClassIdentifier:
+  enemyName: Baboon hawk
+  probabilityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  numberSpawnedFalloff:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.14812775
+      outSlope: -0.14812775
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.40794012
+    - serializedVersion: 3
+      time: 0.10221456
+      value: 1.9541669
+      inSlope: 8.448339
+      outSlope: 8.448339
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.51274943
+    - serializedVersion: 3
+      time: 0.20930588
+      value: 2.7092278
+      inSlope: -6.6556735
+      outSlope: -6.6556735
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.6643663
+      outWeight: 0.1807706
+    - serializedVersion: 3
+      time: 0.3081509
+      value: 1.4604421
+      inSlope: -6.822328
+      outSlope: -6.822328
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.51559556
+      value: 0.7506728
+      inSlope: -2.915006
+      outSlope: -2.915006
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.22144727
+      outWeight: 0.18779925
+    - serializedVersion: 3
+      time: 1
+      value: 0.21860312
+      inSlope: -0.68870384
+      outSlope: -0.68870384
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.27210423
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useNumberSpawnedFalloff: 1
+  enemyPrefab: {fileID: 1108724163112869, guid: 8aefb1f45d9f9074db98e7d5cbd627fe, type: 2}
+  PowerLevel: 1
+  MaxCount: 15
+  numberSpawned: 4
+  isOutsideEnemy: 1
+  isDaytimeEnemy: 0
+  normalizedTimeInDayToLeave: 1
+  stunTimeMultiplier: 0.4
+  doorSpeedMultiplier: 0.3
+  stunGameDifficultyMultiplier: 0.4
+  canBeStunned: 1
+  canDie: 1
+  destroyOnDeath: 0
+  canSeeThroughFog: 0
+  timeToPlayAudio: 15
+  loudnessMultiplier: 1
+  overrideVentSFX: {fileID: 0}
+  hitBodySFX: {fileID: 8300000, guid: 6a8572db8e9b82642b672fcaa10e3735, type: 3}
+  hitEnemyVoiceSFX: {fileID: 0}
+  deathSFX: {fileID: 8300000, guid: 854d6fb4336a869499e84750e24ad4ab, type: 3}
+  stunSFX: {fileID: 0}
+  miscAnimations:
+  - AnimString: caw
+    AnimVoiceclip: {fileID: 8300000, guid: 9bb0fecd692d71e46b425a69343ebbfd, type: 3}
+    AnimLength: 0.5
+    priority: 0
+  audioClips:
+  - {fileID: 8300000, guid: 40f19bfb0711d6e4eaeddf3ddaa84f7c, type: 3}
+  - {fileID: 8300000, guid: 59b14bbea0c45c44cb693af81bfd32db, type: 3}
+  - {fileID: 8300000, guid: 9ee9c647807dbbc42b54441f915ccd21, type: 3}
+  - {fileID: 8300000, guid: 5ac5a4edcdc2bf04e9d6da1be80fa991, type: 3}
+  - {fileID: 8300000, guid: 656226166266e0d4caa1c6c39ee8fbaf, type: 3}
+  - {fileID: 8300000, guid: d131a69b7a754da4eb37243884c0c8dd, type: 3}

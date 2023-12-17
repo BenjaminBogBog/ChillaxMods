@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e80ae96b3eb9177eea5c8f9dadbcda1, type: 3}
+  m_Name: ConfirmEject
+  m_EditorClassIdentifier:
+  displayText: "Do you want to eject all crew members, including yourself? You must be in orbit around a moon. \n\nPlease CONFIRM or DENY.\n\n"
+  terminalEvent:
+  clearPreviousText: 1
+  maxCharactersToType: 35
+  buyItemIndex: -1
+  isConfirmationNode: 0
+  buyRerouteToMoon: -1
+  displayPlanetInfo: -1
+  lockedInDemo: 0
+  shipUnlockableID: -1
+  buyUnlockable: 0
+  returnFromStorage: 0
+  itemCost: 0
+  creatureFileID: -1
+  creatureName:
+  storyLogFileID: -1
+  overrideOptions: 1
+  acceptAnything: 0
+  terminalOptions:
+  - noun: {fileID: 11400000, guid: 2f098f430c0c25f4f8d66ce04ad8e368, type: 2}
+    result: {fileID: 11400000, guid: 5eb76f61f94250944b5aba78d53918fa, type: 2}
+  - noun: {fileID: 11400000, guid: 79adf72d122f89946b5c62d4715bc9f3, type: 2}
+    result: {fileID: 11400000, guid: f5a680ef8c3c03146a591154201773d4, type: 2}
+  playClip: {fileID: 0}
+  playSyncedClip: 3
+  displayTexture: {fileID: 0}
+  displayVideo: {fileID: 0}
+  loadImageSlowly: 0
+  persistentImage: 0
