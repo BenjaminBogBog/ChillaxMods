@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 7625190900589331368}
   - component: {fileID: 2959774866368834864}
   - component: {fileID: 5500543305607653023}
-  - component: {fileID: 8391413193787984024}
   - component: {fileID: 7944181338919868790}
+  - component: {fileID: 9883102843755469}
   m_Layer: 6
   m_Name: Nokia
   m_TagString: PhysicsProp
@@ -110,7 +110,66 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.60792667, y: 0.55072856, z: 1.585243}
   m_Center: {x: -0.27339876, y: 0.021856556, z: -0.057478547}
---- !u!82 &8391413193787984024
+--- !u!114 &7944181338919868790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110734581590411146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47a20a28c3465c9e978f827ff3840ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabbable: 1
+  isHeld: 0
+  isHeldByEnemy: 0
+  deactivated: 0
+  parentObject: {fileID: 0}
+  targetFloorPosition: {x: 0, y: 0, z: 0}
+  startFallingPosition: {x: 0, y: 0, z: 0}
+  floorYRot: 0
+  fallTime: 0
+  hasHitGround: 0
+  scrapValue: 0
+  itemUsedUp: 0
+  playerHeldBy: {fileID: 0}
+  isPocketed: 0
+  isBeingUsed: 0
+  isInElevator: 0
+  isInShipRoom: 0
+  isInFactory: 0
+  useCooldown: 0
+  currentUseCooldown: 0
+  itemProperties: {fileID: 11400000, guid: 0f2b79f8279405b429110e2ce979c8d5, type: 2}
+  insertedBattery:
+    empty: 0
+    charge: 0
+  customGrabTooltip: 
+  propBody: {fileID: 0}
+  propColliders: []
+  originalScale: {x: 0, y: 0, z: 0}
+  wasOwnerLastFrame: 0
+  mainObjectRenderer: {fileID: 6207065673649561106}
+  scrapPersistedThroughRounds: 0
+  heldByPlayerOnServer: 0
+  radarIcon: {fileID: 0}
+  reachedFloorTarget: 0
+  grabbableToEnemies: 1
+  noiseAudio: {fileID: 9883102843755469}
+  noiseAudioFar: {fileID: 4858085879792389141}
+  noiseSFX:
+  - {fileID: 8300000, guid: 2b6da5983df3c624d897a5f2051e73a0, type: 3}
+  noiseSFXFar:
+  - {fileID: 8300000, guid: 2b6da5983df3c624d897a5f2051e73a0, type: 3}
+  noiseRange: 20
+  maxLoudness: 0.8
+  minLoudness: 0.4
+  minPitch: 0.9
+  maxPitch: 1.1
+  triggerAnimator: {fileID: 0}
+--- !u!82 &9883102843755469
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +180,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -206,65 +265,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7944181338919868790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3110734581590411146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e47a20a28c3465c9e978f827ff3840ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabbable: 1
-  isHeld: 0
-  isHeldByEnemy: 0
-  deactivated: 0
-  parentObject: {fileID: 0}
-  targetFloorPosition: {x: 0, y: 0, z: 0}
-  startFallingPosition: {x: 0, y: 0, z: 0}
-  floorYRot: 0
-  fallTime: 0
-  hasHitGround: 0
-  scrapValue: 0
-  itemUsedUp: 0
-  playerHeldBy: {fileID: 0}
-  isPocketed: 0
-  isBeingUsed: 0
-  isInElevator: 0
-  isInShipRoom: 0
-  isInFactory: 0
-  useCooldown: 0
-  currentUseCooldown: 0
-  itemProperties: {fileID: 11400000, guid: 0f2b79f8279405b429110e2ce979c8d5, type: 2}
-  insertedBattery:
-    empty: 0
-    charge: 0
-  customGrabTooltip: 
-  propBody: {fileID: 0}
-  propColliders: []
-  originalScale: {x: 0, y: 0, z: 0}
-  wasOwnerLastFrame: 0
-  mainObjectRenderer: {fileID: 6207065673649561106}
-  scrapPersistedThroughRounds: 0
-  heldByPlayerOnServer: 0
-  radarIcon: {fileID: 0}
-  reachedFloorTarget: 0
-  grabbableToEnemies: 1
-  noiseAudio: {fileID: 0}
-  noiseAudioFar: {fileID: 0}
-  noiseSFX:
-  - {fileID: 8300000, guid: 2b6da5983df3c624d897a5f2051e73a0, type: 3}
-  noiseSFXFar:
-  - {fileID: 8300000, guid: 2b6da5983df3c624d897a5f2051e73a0, type: 3}
-  noiseRange: 13
-  maxLoudness: 0.8
-  minLoudness: 0.4
-  minPitch: 0.9
-  maxPitch: 1.1
-  triggerAnimator: {fileID: 0}
 --- !u!1 &3518228191249183174
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +533,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6546176863895958611}
