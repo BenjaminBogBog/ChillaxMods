@@ -618,8 +618,8 @@ MonoBehaviour:
   isBeingUsed: 0
   isInElevator: 0
   isInShipRoom: 0
-  isInFactory: 0
-  useCooldown: 0
+  isInFactory: 1
+  useCooldown: 0.1
   currentUseCooldown: 0
   itemProperties: {fileID: 11400000, guid: 47734e0e651f72e4bbfbb3baa7673684, type: 2}
   insertedBattery:
@@ -630,7 +630,7 @@ MonoBehaviour:
   propColliders: []
   originalScale: {x: 0, y: 0, z: 0}
   wasOwnerLastFrame: 0
-  mainObjectRenderer: {fileID: 0}
+  mainObjectRenderer: {fileID: 4768666191549059586}
   scrapPersistedThroughRounds: 0
   heldByPlayerOnServer: 0
   radarIcon: {fileID: 0}
@@ -645,11 +645,11 @@ MonoBehaviour:
   dropAudio: {fileID: 0}
   loopGrabAudio: 1
   loopDropAudio: 0
-  chanceToTriggerAnimation: 0
+  chanceToTriggerAnimation: 100
   chanceToTriggerAlternateMesh: 0
   alternateMesh: {fileID: 0}
-  noiseRange: 15
-  noiseLoudness: 1
+  noiseRange: 20
+  noiseLoudness: 0.8
   itemAudioLowPassFilter: {fileID: 0}
 --- !u!1 &4906515714145013575
 GameObject:
