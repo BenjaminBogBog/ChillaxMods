@@ -428,6 +428,7 @@ GameObject:
   - component: {fileID: 5500543305607653023}
   - component: {fileID: 8391413193787984024}
   - component: {fileID: 4448466047526584618}
+  - component: {fileID: 8199016680109705144}
   m_Layer: 6
   m_Name: FreddyFastBear
   m_TagString: PhysicsProp
@@ -618,7 +619,7 @@ MonoBehaviour:
   isBeingUsed: 0
   isInElevator: 0
   isInShipRoom: 0
-  isInFactory: 1
+  isInFactory: 0
   useCooldown: 0.1
   currentUseCooldown: 0
   itemProperties: {fileID: 11400000, guid: 47734e0e651f72e4bbfbb3baa7673684, type: 2}
@@ -643,14 +644,30 @@ MonoBehaviour:
   itemAudio: {fileID: 8391413193787984024}
   grabAudio: {fileID: 8300000, guid: 01f66455ce73ebf42a8a10f3824ae268, type: 3}
   dropAudio: {fileID: 0}
-  loopGrabAudio: 1
+  loopGrabAudio: 0
   loopDropAudio: 0
   chanceToTriggerAnimation: 100
   chanceToTriggerAlternateMesh: 0
   alternateMesh: {fileID: 0}
-  noiseRange: 20
-  noiseLoudness: 0.8
+  noiseRange: 12
+  noiseLoudness: 0.5
   itemAudioLowPassFilter: {fileID: 0}
+--- !u!114 &8199016680109705144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3110734581590411146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f75356a7e9c978bddc7d568e58a50b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useReverb: 0
+  overridingLowPass: 0
+  lowPassOverride: 0
+  debugLog: 0
 --- !u!1 &4906515714145013575
 GameObject:
   m_ObjectHideFlags: 0
